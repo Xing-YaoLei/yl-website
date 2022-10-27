@@ -8,10 +8,21 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
     "commit:comment": "引导设置规范化的提交信息",
-    "commit": "git-cz"
+    "commit": "git add . && git-cz && git push",
+    "eslint:comment":"使用 ESLint 检查并自动修复 src 目录下所有扩展名为 .js 和 .vue 的文件",
+    "eslint":"eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "prettier:comment": "自动格式化当前目录下的所有文件",
+    "prettier": "prettier --write"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.6.0",
     "pinia": "^2.0.21",
+    "prettier": "^2.7.1",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
   },

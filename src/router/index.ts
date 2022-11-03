@@ -7,6 +7,32 @@ const router = createRouter({
             path: '/',
             name: 'home',
             component: () => import('@/views/HomeView.vue'),
+            children: [
+                {
+                    path: '/index',
+                    component: () => import('@/views/Home/DefaultView.vue'),
+                },
+                {
+                    path: 'posts',
+                    component: () => import('@/views/Home/PostsView.vue'),
+                },
+                {
+                    path: 'setting',
+                    component: () => import('@/views/Home/SettingView.vue'),
+                },
+                {
+                    path: 'publish',
+                    component: () => import('@/views/Home/PublishView.vue'),
+                },
+                {
+                    path: 'code',
+                    component: () => import('@/views/Home/CodeView.vue'),
+                },
+                {
+                    path: 'profile',
+                    component: () => import('@/views/Home/ProfileView.vue'),
+                },
+            ],
         },
         {
             path: '/about',

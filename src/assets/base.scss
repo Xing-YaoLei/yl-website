@@ -1,0 +1,10 @@
+/* 顶级公用的CSS存放 */
+@mixin flexble($hov: flex-start, $col: flex-start, $flexDire: row) {
+    display: flex;
+    /* 第一个参数为主轴对齐方式 */
+    justify-content: $hov;
+    /*  第二个参数为交叉轴对齐方式*/
+    align-items: $col;
+    /*  第三个参数为是否为旋转对齐方向*/
+    flex-direction: $flexDire;
+}

@@ -1,9 +1,11 @@
-<script setup lang="ts">
-import { RouterView } from 'vue-router';
-</script>
+<script setup lang="ts"></script>
 
 <template>
-    <RouterView />
+    <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+            <component :is="Component" />
+        </transition>
+    </router-view>
 </template>
 
 <style scoped></style>

@@ -1,6 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SlideBar from '@/components/SlideBar.vue';
+</script>
 
 <template>
-    <main></main>
+    <main class="container">
+        <SlideBar></SlideBar>
+        <router-view></router-view>
+    </main>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+}
+</style>

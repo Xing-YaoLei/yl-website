@@ -7,8 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Chart: typeof import('./src/components/Chart.vue')['default']
-    ElButton: typeof import('element-plus/es')['ElButton']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
@@ -17,7 +15,6 @@ declare module '@vue/runtime-core' {
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Slidebar: typeof import('./src/components/slidebar.vue')['default']
     SlideBar: typeof import('./src/components/SlideBar.vue')['default']
     UserEcharts: typeof import('./src/components/UserEcharts.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']

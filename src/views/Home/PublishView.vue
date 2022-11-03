@@ -1,7 +1,7 @@
+<script lang="ts"></script>
+
 <template>
     <div>Published</div>
 </template>
-
-<script lang="ts"></script>
 
 <style lang="scss" scoped></style>
